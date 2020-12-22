@@ -8,10 +8,10 @@ Get-Steamy is a PowerShell module that aims to make querying the Steam Web API m
 ![1](https://user-images.githubusercontent.com/53626698/102906542-0356b600-4432-11eb-8c65-dcc435c189c5.png)
 
 3. Set a variable $key with your API key
-![2](https://user-images.githubusercontent.com/53626698/102906571-0ea9e180-4432-11eb-9a49-5697ca8d2bdf.png)
+![2](https://user-images.githubusercontent.com/53626698/102909357-179cb200-4436-11eb-8f87-77b7f343324a.png)
 
 4. Using the first function Get-SteamUserID, Resolve the steamID of the player your searching for
-![3](https://user-images.githubusercontent.com/53626698/102906607-1a95a380-4432-11eb-8804-6001dc763170.png)
+![3](https://user-images.githubusercontent.com/53626698/102909401-27b49180-4436-11eb-9b9e-d1c54b9e6211.png)
 
 5. You can now use the steamID as a parameter for other functions/API calls
 ![4](https://user-images.githubusercontent.com/53626698/102906633-22554800-4432-11eb-9d1c-6c4e05e6982a.png)
