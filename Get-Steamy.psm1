@@ -1,4 +1,4 @@
-# Get-Steamy v0.1
+# Get-Steamy v0.2
 # PowerShell Module to run API calls from Steam Web API
 # **** Must have an API key of your own to run API calls ****
 # Get an API Key here: steamcommunity.com/dev/apikey
@@ -31,7 +31,6 @@ function Get-SteamLevel ($steamID, $key) {
 }
 function Get-SteamFriendsList ($steamID, $key) {
 
-    Write-Output "Getting friends list for $vanityURL"
     $friendsList = Invoke-RestMethod -Uri "https://api.steampowered.com/ISteamUser/GetFriendList/v1/?key=$key&steamid=$steamID"
     $friendsList.friendslist.friends
     Write-Output $friendsList
@@ -46,6 +45,5 @@ function Get-SteamGroups ($steamID, $key) {
 
     $userGroupList = Invoke-RestMethod -Uri "https://api.steampowered.com/ISteamUser/GetUserGroupList/v1/?key=$key&steamid=$steamID"
     $userGroupListSumamry = $userGroupList.response.groups
-    Write-Output "  Player is a member of the following groups:"
     Write-Output $userGroupListSumamry
 }
